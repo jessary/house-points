@@ -6,7 +6,7 @@
   z-index: -2;
 }
 .page-bg{
-  background-image: url('https://images.pottermore.com/bxd3o8b291gf/4j6x7iMI88aicYasciiMsm/c581d5f9a424f664cd6f19dbb4c5dee0/HogwartsCastle_WB_F5_HogwartsCastleIllustration_Illust_080615_Land.jpg?w=1200');
+  background-image: url('../assets/images/hogwarts.jpg');
   width: 100%;
   height: 100%;
   margin:auto auto;
@@ -33,20 +33,20 @@ th{
 }
 
 #gryff{
-  background-image: url('http://s6830.storage.proboards.com/6396830/i/AbcM1ixPouTAA92FOJNO.png');
+  background-image: url('../assets/images/gryffindor.png');
 }
 #sly{
-  background-image:url('http://s6830.storage.proboards.com/6396830/i/pO9Rf7QCJbS_R8VW4Jec.png');
+  background-image:url('../assets/images/slytherin.png');
 }
 #rav{
-  background-image:url('http://s6830.storage.proboards.com/6396830/i/iqpk8rdEmScw48FuiWwW.png');
+  background-image:url('../assets/images/ravenclaw.png');
 }
 #huff{
-  background-image:url('http://s6830.storage.proboards.com/6396830/i/QFq0Eoz2xBWttk7uVWzv.png');
+  background-image:url('../assets/images/hufflepuff.png');
 }
 #gryff, #sly, #rav, #huff{
   background-size: cover;
-  height: 250px;
+  height: 315px;
   background-position: center center;
   position: relative;
   padding: 0;
