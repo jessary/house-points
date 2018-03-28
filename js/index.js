@@ -42,21 +42,21 @@ var url = "https://spreadsheets.google.com/feeds/list/" + spreadsheetID + "/od6/
      var gryffindorName = obj[i].gsx$gryffindor.$t;
      var gryffindorPoints = obj[i].gsx$_cpzh4.$t;
      var slytherinName = obj[i].gsx$slytherin.$t;
-     var slytherinPoints = obj[i].gsx$_ckd7g.$t;
+     var slytherinPoints = obj[i].gsx$_chk2m.$t;
      var ravenclawName = obj[i].gsx$ravenclaw.$t;
-     var ravenclawPoints = obj[i].gsx$_chk2m.$t;
+     var ravenclawPoints = obj[i].gsx$_ckd7g.$t;
      var hufflepuffName = obj[i].gsx$hufflepuff.$t;
      var hufflepuffPoints = obj[i].gsx$_cyevm.$t;
      
-     entry += "<tr>";
-     entry += "<td class='name'>" + gryffindorName + "</td>";
-     entry += "<td class='points'>" + gryffindorPoints + "</td>";
-     entry += "<td class='name'>" + slytherinName + "</td>";
-     entry += "<td class='points'>" + slytherinPoints + "</td>";
-     entry += "<td class='name'>" + hufflepuffName + "</td>";
-     entry += "<td class='points'>" + ravenclawPoints + "</td>";
-     entry += "<td class='name'>" + ravenclawName + "</td>";
-     entry += "<td class='points'>" + hufflepuffPoints + "</td>";
+     entry += "<tr><td>";
+     entry += "<div class='name'>" + gryffindorName + "</div>";
+     entry += "<div class='points'>" + gryffindorPoints + "</div>";
+     entry += "<td><div class='name'>" + slytherinName + "</div>";
+     entry += "<div class='points'>" + slytherinPoints + "</div></td>";
+     entry += "<td><div class='name'>" + hufflepuffName + "</div>";
+     entry += "<div class='points'>" + ravenclawPoints + "</div></td>";
+     entry += "<td><div class='name'>" + ravenclawName + "</div>";
+     entry += "<div class='points'>" + hufflepuffPoints + "</div></td";
      entry += "</tr>";
      
    }
@@ -68,4 +68,4 @@ var url = "https://spreadsheets.google.com/feeds/list/" + spreadsheetID + "/od6/
 
 update_trackdata();
 
-var interval = setInterval(update_trackdata, 6000);
+var interval = setInterval(update_trackdata, 40000);

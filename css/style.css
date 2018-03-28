@@ -1,3 +1,11 @@
+@font-face {
+font-family: "harry";
+src: url("../assets/fonts/Harry-Potter.ttf.eot");
+src: 
+url("../assets/fonts/Harry-Potter.ttf.woff") format("woff"),
+url("../assets/fonts/Harry-Potter.ttf.svg#filename") format("svg");
+}
+
 .page-bg-color{
   background: #000000;
   position: fixed;
@@ -33,16 +41,16 @@ th{
 }
 
 #gryff{
-  background-image: url('../assets/images/gryffindor.png');
+  background: #a40000;;
 }
 #sly{
-  background-image:url('../assets/images/slytherin.png');
+  background: #004e26;;
 }
 #rav{
-  background-image:url('../assets/images/ravenclaw.png');
+  background: #005f83;
 }
 #huff{
-  background-image:url('../assets/images/hufflepuff.png');
+  background: #c3960d;;
 }
 #gryff, #sly, #rav, #huff{
   background-size: cover;
@@ -54,13 +62,13 @@ th{
 }
 
 #gryff-score, #sly-score, #rav-score, #huff-score{
-  position: absolute;
+  position: relative;
   bottom: 0;
   text-align: center;
   width: 100%;
   padding: 10px;
   background-color: rgba(0,0,0,.75);
-  margin: 0;
+  margin-top: 20px;
   color: #ffffff;
   font-size: 2rem;
 }
@@ -77,28 +85,84 @@ td#rotate{
     text-align:center;
 }
 
+.house-name{
+  font-family:'harry', sans-serif;
+/*  position: absolute;
+  bottom: 60px;*/
+  text-align:center;
+  font-size: 3rem;
+  display:block;
+  margin:auto auto;
+  width: 100%;
+}
+.house-badge img{
+  width:100%;
+  max-width: 200px;
+  margin: 20px 0;
+}
+
+#gryff-house{
+  color: #d49734;
+}
+#sly-house{
+  color: #009a48;
+}
+#rav-house{
+  color: #03a9d2;
+}
+#huff-house{
+  color: #241b0d;
+}
+
 td#leaderboard{
   text-align:center;
-  font-weight: bold;
   background-color:#000000;
   color: White;
-  font-size: 2.1rem;
+  padding-top: 25px;
+  font-size: 3rem;
+  font-family: 'harry', sans-serif;
 }
 
 .ind-points{
-  background-color: white;
-}
-
-.ind-points td{
-  padding: 5px 10px 5px 10px;
+  background-color: rgba(0,0,0,.80);
+  border-radius: 0 0 20px 20px;
+  padding-bottom: 20px !important;
 }
 
 td.house-points{
   text-align:center;
 }
 
+.name{
+  color: white;
+  display:inline-block;
+  text-align:left;
+  width: 70%;
+}
+.points{
+  color: white;
+  display:inline-block;
+  text-align:right;
+  width: 30%;
+}
+
+.name, .points{
+  border-bottom: 1px dotted rgba(256,256,256,.35);
+  margin: 5px 0;
+  padding: 5px;
+}
+
 .leaderboard-names{
   width: 100%;
+}
+.leaderboard-names td{
+  width: 25%;
+  padding: 0 30px;
+}
+
+.leaderboard-names tr:last-child{
+  margin-bottom: 20px !important;
+  padding-bottom: 20px !important;
 }
 
 .points{
