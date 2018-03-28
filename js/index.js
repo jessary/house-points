@@ -68,4 +68,4 @@ var url = "https://spreadsheets.google.com/feeds/list/" + spreadsheetID + "/od6/
 
 update_trackdata();
 
-var interval = setInterval(update_trackdata, 40000);
+var interval = setInterval(update_trackdata, 6000);
