@@ -14,7 +14,7 @@ url("../assets/fonts/Harry-Potter.ttf.svg#filename") format("svg");
   z-index: -2;
 }
 .page-bg{
-  background-image: url('../assets/images/hogwarts.jpg');
+  background-image: url('../assets/images/candles.jpg');
   width: 100%;
   height: 100%;
   margin:auto auto;
@@ -124,9 +124,14 @@ td#leaderboard{
 }
 
 .ind-points{
-  background-color: rgba(0,0,0,.80);
-  border-radius: 0 0 20px 20px;
   padding-bottom: 20px !important;
+}
+
+.ind-points .inner-wrapper{
+  padding-bottom: 25px;background-color: rgba(0,0,0,.90); 
+  border-radius: 0 0 20px 20px;
+  -webkit-border-radius: 0 0 20px 20px;
+  -moz-border-radius: 0 0 20px 20px;
 }
 
 td.house-points{
