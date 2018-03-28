@@ -40,11 +40,11 @@ var url = "https://spreadsheets.google.com/feeds/list/" + spreadsheetID + "/od6/
    for (var i = 2; i < 7; i++) {
      
      var gryffindorName = obj[i].gsx$gryffindor.$t;
-     var gryffindorPoints = getPoints(obj[i].gsx$_chk2m.$t);
+     var gryffindorPoints = getPoints(obj[i].gsx$_cpzh4.$t);
      var slytherinName = obj[i].gsx$slytherin.$t;
      var slytherinPoints = getPoints(obj[i].gsx$_ckd7g.$t);
      var ravenclawName = obj[i].gsx$ravenclaw.$t;
-     var ravenclawPoints = getPoints(obj[i].gsx$_cpzh4.$t);
+     var ravenclawPoints = getPoints(obj[i].gsx$_chk2m.$t);
      var hufflepuffName = obj[i].gsx$hufflepuff.$t;
      var hufflepuffPoints = getPoints(obj[i].gsx$_cyevm.$t);
      
