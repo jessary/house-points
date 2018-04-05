@@ -43,9 +43,9 @@ var url = "https://spreadsheets.google.com/feeds/list/" + spreadsheetID + "/od6/
      var gryffindorPoints = obj[i].gsx$_cpzh4.$t;
      var slytherinName = obj[i].gsx$slytherin.$t;
      var slytherinPoints = obj[i].gsx$_chk2m.$t;
-     var ravenclawName = obj[i].gsx$ravenclaw.$t;
+     var ravenclawName = obj[i].gsx$hufflepuff.$t;
      var ravenclawPoints = obj[i].gsx$_ckd7g.$t;
-     var hufflepuffName = obj[i].gsx$hufflepuff.$t;
+     var hufflepuffName = obj[i].gsx$ravenclaw.$t;
      var hufflepuffPoints = obj[i].gsx$_cyevm.$t;
      
      entry += "<tr><td>";
